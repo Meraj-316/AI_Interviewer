@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Interviewer - Dashboard</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-icon">◎</div>
+            <span>AI Interviewer</span>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <a href="#" class="nav-item active">
+                <span class="nav-icon">▣</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">◉</span>
+                <span>Start Interview</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">◷</span>
+                <span>History</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">▥</span>
+                <span>Analytics</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">♙</span>
+                <span>Profile</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">⚙</span>
+                <span>Settings</span>
+            </a>
+
+            <a href="#" class="nav-item pro-item">
+                <span class="nav-icon">◆</span>
+                <span>Upgrade to Pro</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">↪</span>
+                <span>Logout</span>
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content">
+
+        <!-- TOP BAR -->
+
+        <header class="topbar">
+
+            <div class="mobile-brand">
+                AI Interviewer
+            </div>
+
+            <div class="topbar-right">
+
+                <div class="search-box">
+                    <span>⌕</span>
+                    <input type="text" placeholder="Search...">
+                    <span class="search-arrow">⌄</span>
+                </div>
+
+                <button class="notification">
+                    ♧
+                    <span class="notification-dot"></span>
+                </button>
+
+                <div class="profile-mini">
+                    <div class="avatar">S</div>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+
+        <section class="content">
+
+            <!-- WELCOME -->
+
+            <div class="welcome-section">
+
+                <p class="welcome-small">Welcome back,</p>
+
+                <h1>
+                    Shifa Fatema
+                    <span class="wave">👋</span>
+                </h1>
+
+                <p class="welcome-text">
+                    Ready to level up your interview skills today?
+                </p>
+
+            </div>
+
+
+            <!-- STAT CARDS -->
+
+            <div class="stats-grid">
+
+                <div class="stat-card purple">
+                    <div class="stat-title">Total Interviews</div>
+                    <div class="stat-value">12</div>
+                    <div class="stat-icon">▣</div>
+                </div>
+
+                <div class="stat-card cyan">
+                    <div class="stat-title">Average Score</div>
+                    <div class="stat-value">78%</div>
+                    <div class="stat-icon">◉</div>
+                </div>
+
+                <div class="stat-card violet">
+                    <div class="stat-title">Total Hours</div>
+                    <div class="stat-value">8.4</div>
+                    <div class="stat-icon">◷</div>
+                </div>
+
+                <div class="stat-card blue">
+                    <div class="stat-title">Strongest Skill</div>
+                    <div class="stat-value skill">DSA</div>
+                    <div class="stat-icon">◆</div>
+                </div>
+
+            </div>
+
+
+            <!-- CHART + RECENT INTERVIEWS -->
+
+            <div class="middle-grid">
+
+                <!-- PROGRESS -->
+
+                <div class="panel progress-panel">
+
+                    <div class="panel-header">
+                        <h2>Your Progress</h2>
+
+                        <button class="more-btn">⋮</button>
+                    </div>
+
+                    <div class="chart">
+
+                        <div class="y-labels">
+                            <span>100%</span>
+                            <span>75%</span>
+                            <span>50%</span>
+                            <span>25%</span>
+                            <span>0%</span>
+                        </div>
+
+                        <div class="chart-area">
+
+                            <div class="grid-line line-1"></div>
+                            <div class="grid-line line-2"></div>
+                            <div class="grid-line line-3"></div>
+                            <div class="grid-line line-4"></div>
+                            <div class="grid-line line-5"></div>
+
+                            <svg
+                                class="progress-svg"
+                                viewBox="0 0 600 220"
+                                preserveAspectRatio="none"
+                            >
+
+                                <defs>
+                                    <linearGradient
+                                        id="areaGradient"
+                                        x1="0"
+                                        y1="0"
+                                        x2="0"
+                                        y2="1"
+                                    >
+                                        <stop offset="0%" stop-opacity=".35"/>
+                                        <stop offset="100%" stop-opacity="0"/>
+                                    </linearGradient>
+                                </defs>
+
+                                <path
+                                    class="chart-area-fill"
+                                    d="
+                                    M0 165
+                                    L55 145
+                                    L110 82
+                                    L165 120
+                                    L220 90
+                                    L275 110
+                                    L330 62
+                                    L385 105
+                                    L440 92
+                                    L495 40
+                                    L550 85
+                                    L600 55
+                                    L600 220
+                                    L0 220
+                                    Z"
+                                />
+
+                                <polyline
+                                    class="chart-line"
+                                    points="
+                                    0,165
+                                    55,145
+                                    110,82
+                                    165,120
+                                    220,90
+                                    275,110
+                                    330,62
+                                    385,105
+                                    440,92
+                                    495,40
+                                    550,85
+                                    600,55"
+                                />
+
+                                <circle cx="110" cy="82" r="5"/>
+                                <circle cx="330" cy="62" r="5"/>
+                                <circle cx="495" cy="40" r="5"/>
+                                <circle cx="600" cy="55" r="5"/>
+
+                            </svg>
+
+                            <div class="x-labels">
+                                <span>May 1</span>
+                                <span>May 8</span>
+                                <span>May 15</span>
+                                <span>May 22</span>
+                                <span>May 29</span>
+                                <span>Jun 5</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RECENT INTERVIEWS -->
+
+                <div class="panel recent-panel">
+
+                    <div class="panel-header">
+
+                        <h2>Recent Interviews</h2>
+
+                        <button class="more-btn">⋮</button>
+
+                    </div>
+
+                    <div class="interview-list">
+
+                        <div class="interview-item">
+
+                            <div>
+                                <h3>Frontend Developer</h3>
+                                <p>May 30, 2024</p>
+                            </div>
+
+                            <span class="score green">82%</span>
+
+                        </div>
+
+
+                        <div class="interview-item">
+
+                            <div>
+                                <h3>Data Scientist</h3>
+                                <p>May 28, 2024</p>
+                            </div>
+
+                            <span class="score green">75%</span>
+
+                        </div>
+
+
+                        <div class="interview-item">
+
+                            <div>
+                                <h3>Full Stack Developer</h3>
+                                <p>May 25, 2024</p>
+                            </div>
+
+                            <span class="score orange">68%</span>
+
+                        </div>
+
+                    </div>
+
+                    <button class="view-all">
+                        View All
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- RECOMMENDED -->
+
+            <section class="recommended">
+
+                <div class="section-title">
+
+                    <h2>Recommended for you</h2>
+
+                    <button class="view-more">
+                        View More
+                    </button>
+
+                </div>
+
+
+                <div class="recommend-grid">
+
+                    <div class="recommend-card">
+
+                        <div class="recommend-icon purple-icon">
+                            ⌘
+                        </div>
+
+                        <div>
+                            <h3>DSA Practice</h3>
+                            <p>20 Questions</p>
+                        </div>
+
+                        <span class="difficulty easy">●</span>
+
+                    </div>
+
+
+                    <div class="recommend-card">
+
+                        <div class="recommend-icon cyan-icon">
+                            ◉
+                        </div>
+
+                        <div>
+                            <h3>System Design</h3>
+                            <p>10 Questions</p>
+                        </div>
+
+                        <span class="difficulty easy">●</span>
+
+                    </div>
+
+
+                    <div class="recommend-card">
+
+                        <div class="recommend-icon blue-icon">
+                            ♙
+                        </div>
+
+                        <div>
+                            <h3>Behavioral</h3>
+                            <p>10 Questions</p>
+                        </div>
+
+                        <span class="difficulty medium">●</span>
+
+                    </div>
+
+
+                    <div class="recommend-card">
+
+                        <div class="recommend-icon purple-icon">
+                            ◈
+                        </div>
+
+                        <div>
+                            <h3>Aptitude</h3>
+                            <p>25 Questions</p>
+                        </div>
+
+                        <span class="difficulty medium">●</span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>
