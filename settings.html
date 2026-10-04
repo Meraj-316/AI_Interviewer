@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Settings | AI Interviewer</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile-settings.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body class="settings-page">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <div class="logo-icon">◎</div>
+            <span>AI Interviewer</span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#features">Features</a>
+            <a href="index.html#about">About</a>
+        </nav>
+        <!-- <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="index.html#features">Features</a>
+    <a href="index.html#about">About</a>
+    <a href="profile.html">Profile</a>
+</nav> -->
+
+        <div class="nav-buttons">
+            <button class="login-btn" onclick="window.location.href='index.html'">
+                Logout
+            </button>
+        </div>
+
+    </header>
+
+
+    <!-- ================= SETTINGS ================= -->
+
+    <main class="settings-container">
+
+        <div class="page-heading">
+
+            <p class="section-label">APPLICATION</p>
+
+            <h1>
+                <span>Settings</span>
+            </h1>
+
+            <p>
+                Customize your AI Interviewer experience and interview preferences.
+            </p>
+
+        </div>
+
+
+        <section class="settings-card">
+
+            <!-- INTERVIEW PREFERENCES -->
+
+            <div class="settings-group">
+
+                <div class="settings-title">
+                    <h3>Interview Preferences</h3>
+                    <p>Choose your preferred interview settings.</p>
+                </div>
+
+                <div class="setting-row">
+
+                    <div>
+                        <strong>Difficulty Level</strong>
+                        <p>Select the difficulty of your interview.</p>
+                    </div>
+
+                    <select id="difficulty">
+                        <option value="Easy">Easy</option>
+                        <option value="Medium" selected>Medium</option>
+                        <option value="Hard">Hard</option>
+                    </select>
+
+                </div>
+
+
+                <div class="setting-row">
+
+                    <div>
+                        <strong>Questions per Interview</strong>
+                        <p>Select the number of questions.</p>
+                    </div>
+
+                    <select id="questionCount">
+                        <option value="5">5 Questions</option>
+                        <option value="10" selected>10 Questions</option>
+                        <option value="15">15 Questions</option>
+                        <option value="20">20 Questions</option>
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- NOTIFICATIONS -->
+
+            <div class="settings-group">
+
+                <div class="settings-title">
+                    <h3>Notifications</h3>
+                    <p>Manage your interview notifications.</p>
+                </div>
+
+
+                <div class="setting-row">
+
+                    <div>
+                        <strong>Interview Reminders</strong>
+                        <p>Receive reminders for your planned interviews.</p>
+                    </div>
+
+                    <label class="toggle">
+                        <input type="checkbox" id="reminderToggle" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+
+                </div>
+
+
+                <div class="setting-row">
+
+                    <div>
+                        <strong>Performance Updates</strong>
+                        <p>Receive updates about your interview performance.</p>
+                    </div>
+
+                    <label class="toggle">
+                        <input type="checkbox" id="performanceToggle" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <!-- APPEARANCE -->
+
+            <div class="settings-group">
+
+                <div class="settings-title">
+                    <h3>Appearance</h3>
+                    <p>Customize the appearance of the application.</p>
+                </div>
+
+
+                <div class="setting-row">
+
+                    <div>
+                        <strong>Dark Mode</strong>
+                        <p>Use the dark interface of AI Interviewer.</p>
+                    </div>
+
+                    <label class="toggle">
+                        <input type="checkbox" id="darkModeToggle" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <!-- SAVE -->
+
+            <div class="settings-save">
+
+                <button class="primary-btn" id="saveSettings">
+                    Save Settings
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/settings.js"></script>
+
+</body>
+
+</html>

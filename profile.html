@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile | AI Interviewer</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile-settings.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body class="profile-page">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <div class="logo-icon">◎</div>
+            <span>AI Interviewer</span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#features">Features</a>
+            <a href="index.html#about">About</a>
+        </nav>
+        <!-- <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="index.html#features">Features</a>
+    <a href="index.html#about">About</a>
+    <a href="settings.html">Settings</a>
+</nav> -->
+
+        <div class="nav-buttons">
+
+            <button class="login-btn" onclick="window.location.href='index.html'">
+                Logout
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= PROFILE ================= -->
+
+    <main class="profile-container">
+
+        <div class="page-heading">
+
+            <p class="section-label">MY ACCOUNT</p>
+
+            <h1>
+                Your <span>Profile</span>
+            </h1>
+
+            <p>
+                Manage your personal information and track your interview progress.
+            </p>
+
+        </div>
+
+
+        <!-- ================= PROFILE CARD ================= -->
+
+        <section class="profile-card">
+
+            <div class="profile-top">
+
+                <div class="profile-avatar">
+                    S
+                </div>
+
+                <div class="profile-info">
+
+                    <h2>Shifa Fatema</h2>
+
+                    <p>AI & Data Science Student</p>
+
+                    <span class="profile-email">
+                        shifa@example.com
+                    </span>
+
+                </div>
+
+                <button class="primary-btn" id="editProfileBtn">
+                    Edit Profile
+                </button>
+
+            </div>
+
+
+            <!-- ================= PERSONAL INFORMATION ================= -->
+
+            <div class="profile-section">
+
+                <h3>Personal Information</h3>
+
+                <div class="profile-grid">
+
+                    <div class="profile-field">
+                        <span>Full Name</span>
+                        <strong>Shifa Fatema</strong>
+                    </div>
+
+                    <div class="profile-field">
+                        <span>Email Address</span>
+                        <strong>shifa@example.com</strong>
+                    </div>
+
+                    <div class="profile-field">
+                        <span>Branch</span>
+                        <strong>Artificial Intelligence & Data Science</strong>
+                    </div>
+
+                    <div class="profile-field">
+                        <span>Year</span>
+                        <strong>2nd Year</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= STATISTICS ================= -->
+
+            <div class="profile-section">
+
+                <h3>Interview Statistics</h3>
+
+                <div class="profile-stats">
+
+                    <div class="profile-stat">
+                        <strong>12</strong>
+                        <span>Interviews</span>
+                    </div>
+
+                    <div class="profile-stat">
+                        <strong>78%</strong>
+                        <span>Average Score</span>
+                    </div>
+
+                    <div class="profile-stat">
+                        <strong>8</strong>
+                        <span>Completed</span>
+                    </div>
+
+                    <div class="profile-stat">
+                        <strong>4</strong>
+                        <span>In Progress</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= EDIT PROFILE MODAL ================= -->
+
+    <div class="profile-modal" id="profileModal">
+
+        <div class="profile-modal-content">
+
+            <button class="modal-close" id="closeProfileModal">
+                ×
+            </button>
+
+            <h2>Edit Profile</h2>
+
+            <p>Update your profile information.</p>
+
+            <form id="profileForm">
+
+                <label for="profileName">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="profileName"
+                    value="Shifa Fatema"
+                    required
+                >
+
+                <label for="profileEmail">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="profileEmail"
+                    value="shifa@example.com"
+                    required
+                >
+
+                <label for="profileBranch">
+                    Branch
+                </label>
+
+                <input
+                    type="text"
+                    id="profileBranch"
+                    value="Artificial Intelligence & Data Science"
+                    required
+                >
+
+                <button type="submit" class="primary-btn">
+                    Save Changes
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/profile.js"></script>
+
+</body>
+
+</html>

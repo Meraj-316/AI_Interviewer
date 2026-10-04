@@ -4,11 +4,25 @@
 
 const navItems = document.querySelectorAll(".nav-item");
 
+// navItems.forEach(item => {
+
+//     item.addEventListener("click", function (event) {
+
+//         event.preventDefault();
+
+//         navItems.forEach(nav => {
+//             nav.classList.remove("active");
+//         });
+
+//         this.classList.add("active");
+
+//     });
+
+// });
+
 navItems.forEach(item => {
 
-    item.addEventListener("click", function (event) {
-
-        event.preventDefault();
+    item.addEventListener("click", function () {
 
         navItems.forEach(nav => {
             nav.classList.remove("active");

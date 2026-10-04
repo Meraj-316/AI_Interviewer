@@ -14,7 +14,14 @@ function openDashboard() {
     window.location.href = "dashboard.html";
 
 }
+const loginButton =
+    document.getElementById("loginBtn");
 
+if (loginButton) {
+
+    loginButton.addEventListener("click", openDashboard);
+
+}
 
 if (getStartedButton) {
 
