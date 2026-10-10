@@ -36,7 +36,9 @@ jobs:
 
       - name: Prepare deployment
         run: |
-         cp landing.html dist/landing.html
+          mkdir -p dist/app
+          cp dist/index.html dist/app/index.html
+          cp landing.html dist/index.html
           cp -r css dist/
           cp -r js dist/
           cp dashboard.html dist/
